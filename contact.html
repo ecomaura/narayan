@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Narayan Industrial Automation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-gears"></i></div>
+                <div class="logo-text">Narayan <span>Automation</span></div>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get Immediate Technical Assistance & Quotations</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-wrapper">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <h5>Our Office Address</h5>
+                            <p>Kadodara-Bardoli Road, Kadodara, Surat, Gujarat - 394327</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h5>Phone Number</h5>
+                            <p><a href="tel:+917405109618">+91 7405109618</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:narayanautomation@yahoo.com">narayanautomation@yahoo.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Requirement</label>
+                            <textarea class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14878.077221081515!2d72.95503045!3d21.17150065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f44c4146a77%3A0x6b107e3878bd6c81!2sKadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Narayan Industrial Automation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917405109618" target="_blank" class="floating-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
