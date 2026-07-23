@@ -420,7 +420,7 @@ img {
 
 .mv-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -1021,4 +1021,3 @@ textarea.form-control {
     .hero-title { font-size: 2.2rem; }
     .footer-grid { grid-template-columns: 1fr; }
    }
-   
