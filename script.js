@@ -63,14 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (statsSection && counters.length > 0) {
-        window.addEventListener('scroll', () => {
+        function checkCounters() {
             const sectionPos = statsSection.getBoundingClientRect().top;
             const screenPos = window.innerHeight;
             if (sectionPos < screenPos && !animated) {
                 startCounters();
                 animated = true;
             }
-        });
+        }
+        window.addEventListener('scroll', checkCounters);
+        checkCounters();
     }
 });
 
